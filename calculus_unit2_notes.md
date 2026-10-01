@@ -62,10 +62,14 @@
 - Ex: 8x sin x → 8x cos x + 8 sin x; 2eˣ√x → eˣ/√x + 2eˣ√x; (1/x+1)(2x²−5) → 4x+2+5/x²
 - Table ex: h=3f·g, h′(2)=3f(2)g′(2)+g(2)·3f′(2)=24+6=30; r=(f/2+2)(3−g), r′(−5) = −15/2
 
+## 2.9 Quotient Rule
+- d/dx (f/g) = (g·f′ − f·g′)/g² ("ho d hi minus hi d ho over ho ho": ho = bottom, hi = top)
+- Ex: 2x²/(3x+1) → (6x²+4x)/(3x+1)²; sin x/(2x²−5) → ((2x²−5)cos x − 4x sin x)/(2x²−5)²
+- Sometimes split instead: (3x+1)/(2x²) = (3/2)x⁻¹ + (1/2)x⁻² → h′ = −3/(2x²) − 1/x³
+- Table ex: r=−g/(1−f), r′(x) = [(1−f)(−g′) − (−g)(−f′)]/(1−f)² → r′(2) = (6−2)/9 = 4/9
+
 ## 2.10 Trig Derivatives
 - d/dx sin x = cos x; cos x → −sin x; tan x → sec²x; csc x → −csc x cot x; sec x → sec x tan x; cot x → −csc²x
 - Recall: csc=1/sin, sec=1/cos, tan=sin/cos, cot=cos/sin
 - Ex: y=sin x tan x → y′ = sin x sec²x + sin x. f=x/sec x → f′=(1−x tan x)/sec x (quotient rule used) → f′(π/6) = (6√3−π)/12
 - Calculator: d/dx csc²(4x) at x=2 ≈ 1.2020 (enter as 1/(sin(4x))²)
-
-(Note: there was no 2.9 in the uploaded set — the 2.10 example uses the quotient rule.)
