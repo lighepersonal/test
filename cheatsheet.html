@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@page{size:8.5in 11in;margin:0}
+html,body{margin:0;background:#fff}
+body{font-family:"DejaVu Sans",Arial,sans-serif;color:#000}
+.box{position:absolute;left:0.25in;top:0.25in;width:4in;height:5.25in;border:0.5px dashed #888;box-sizing:border-box;padding:0.05in;overflow:hidden;
+ column-count:2;column-gap:0.07in;font-size:6.6pt;line-height:1.25}
+h2{font-size:7pt;margin:2px 0 1px;background:#000;color:#fff;padding:0 2px;break-after:avoid}
+p{margin:0 0 1px}
+table{border-collapse:collapse;width:100%;font-size:5.3pt;text-align:center;break-inside:avoid}
+td,th{border:0.4px solid #666;padding:0 0.5px}
+</style></head><body><div class="box">
+<h2>RATE OF CHANGE</h2>
+<p>slope = Δy/Δx = (y₂−y₁)/(x₂−x₁)</p>
+<p>AROC [a,b] = (f(b)−f(a))/(b−a) = (f(x)−f(a))/(x−a) → secant slope</p>
+<p>IROC @a = lim<sub>h→0</sub> (f(a+h)−f(a))/h = lim<sub>x→a</sub> (f(x)−f(a))/(x−a) → tangent slope</p>
+<p>f′(x) = lim<sub>h→0</sub> (f(x+h)−f(x))/h &nbsp; <b>f′(a) = m</b></p>
+<p>f′, y′, dy/dx, d/dx f|ₓ₌ₐ (nDeriv)</p>
+<p>table: f′(x) ≈ (f(b)−f(a))/(b−a), points around x</p>
+<h2>LINES</h2>
+<p><b>y − y₁ = m(x − x₁)</b></p>
+<p>Tangent @a: y − f(a) = f′(a)(x − a)</p>
+<p>Normal: slope = <b>−1/f′(a)</b> (neg. reciprocal)</p>
+<p>Horizontal tangent: f′(x) = 0</p>
+<h2>DIFFERENTIABLE?</h2>
+<p>NOT at: jump/hole, corner/cusp, vertical tangent</p>
+<p>Diff ⇒ continuous (T); cont ⇒ diff (F)</p>
+<p>Piecewise @c: pieces equal at c, AND derivatives equal at c</p>
+<h2>ROOTS / POWERS</h2>
+<p>√x = x^(1/2); ⁿ√(xᵐ) = x^(m/n); 1/xⁿ = x⁻ⁿ</p>
+<p>xᵃ·xᵇ = xᵃ⁺ᵇ; xᵃ/xᵇ = xᵃ⁻ᵇ; (xᵃ)ᵇ = xᵃᵇ</p>
+<p>Rewrite as powers BEFORE deriving</p>
+<h2>DERIVATIVE RULES</h2>
+<p>d/dx c = 0; d/dx cx = c; (cu)′ = c·u′</p>
+<p>(u ± v)′ = u′ ± v′</p>
+<p><b>Power:</b> (xⁿ)′ = n·xⁿ⁻¹; (√x)′ = 1/(2√x); (1/x)′ = −1/x²</p>
+<p><b>Product:</b> (fg)′ = f·g′ + g·f′</p>
+<p><b>Quotient:</b> (f/g)′ = (g·f′ − f·g′)/g² "ho d hi − hi d ho / ho ho"</p>
+<h2>EXP / LOG</h2>
+<p>(eˣ)′ = eˣ; (aˣ)′ = aˣ ln a</p>
+<p>(ln x)′ = 1/x; (logₐx)′ = 1/(x ln a)</p>
+<p>ln 1 = 0; ln 0 = DNE; ln e = 1; e⁰ = 1; e^(ln a) = a; ln(eᵃ) = a</p>
+<h2>TRIG DERIVATIVES</h2>
+<p>sin → cos; cos → −sin; tan → sec²; cot → −csc²; sec → sec·tan; csc → −csc·cot</p>
+<p>csc = 1/sin; sec = 1/cos; tan = sin/cos; cot = cos/sin</p>
+<h2>TRIG VALUES (DNE = undefined)</h2>
+<table>
+<tr><th>θ</th><th>sin</th><th>cos</th><th>tan</th><th>csc</th><th>sec</th><th>cot</th></tr>
+<tr><td>0</td><td>0</td><td>1</td><td>0</td><td>DNE</td><td>1</td><td>DNE</td></tr>
+<tr><td>π/6</td><td>1/2</td><td>√3/2</td><td>√3/3</td><td>2</td><td>2√3/3</td><td>√3</td></tr>
+<tr><td>π/4</td><td>√2/2</td><td>√2/2</td><td>1</td><td>√2</td><td>√2</td><td>1</td></tr>
+<tr><td>π/3</td><td>√3/2</td><td>1/2</td><td>√3</td><td>2√3/3</td><td>2</td><td>√3/3</td></tr>
+<tr><td>π/2</td><td>1</td><td>0</td><td>DNE</td><td>1</td><td>DNE</td><td>0</td></tr>
+<tr><td>2π/3</td><td>√3/2</td><td>−1/2</td><td>−√3</td><td>2√3/3</td><td>−2</td><td>−√3/3</td></tr>
+<tr><td>3π/4</td><td>√2/2</td><td>−√2/2</td><td>−1</td><td>√2</td><td>−√2</td><td>−1</td></tr>
+<tr><td>5π/6</td><td>1/2</td><td>−√3/2</td><td>−√3/3</td><td>2</td><td>−2√3/3</td><td>−√3</td></tr>
+<tr><td>π</td><td>0</td><td>−1</td><td>0</td><td>DNE</td><td>−1</td><td>DNE</td></tr>
+<tr><td>7π/6</td><td>−1/2</td><td>−√3/2</td><td>√3/3</td><td>−2</td><td>−2√3/3</td><td>√3</td></tr>
+<tr><td>5π/4</td><td>−√2/2</td><td>−√2/2</td><td>1</td><td>−√2</td><td>−√2</td><td>1</td></tr>
+<tr><td>4π/3</td><td>−√3/2</td><td>−1/2</td><td>√3</td><td>−2√3/3</td><td>−2</td><td>√3/3</td></tr>
+<tr><td>3π/2</td><td>−1</td><td>0</td><td>DNE</td><td>−1</td><td>DNE</td><td>0</td></tr>
+<tr><td>5π/3</td><td>−√3/2</td><td>1/2</td><td>−√3</td><td>−2√3/3</td><td>2</td><td>−√3/3</td></tr>
+<tr><td>7π/4</td><td>−√2/2</td><td>√2/2</td><td>−1</td><td>−√2</td><td>√2</td><td>−1</td></tr>
+<tr><td>11π/6</td><td>−1/2</td><td>√3/2</td><td>−√3/3</td><td>−2</td><td>2√3/3</td><td>−√3</td></tr>
+<tr><td>2π</td><td>0</td><td>1</td><td>0</td><td>DNE</td><td>1</td><td>DNE</td></tr>
+</table>
+</div></body></html>
